@@ -1,0 +1,152 @@
+@media (max-width: 767px){
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 32px;
+        border-bottom: none;
+    }
+
+    .input_top {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+
+        &_mob {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    .logo {
+        &_img {
+            width: 99px;
+        }
+    }
+
+    .heading0 {
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .text0 {
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .link0 {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading_cat {
+        gap: 16px;
+    }
+
+    .catalog_links_top {
+
+        .link_catalog {
+            font-size: 14px;
+        }
+    }
+
+    .cart_content {
+        width: 343px;
+    }
+
+    .cart_name_box {
+        display: none;
+    }
+
+    .cart_img {
+        display: none;
+    }
+
+    .cart_info_heading {
+        font-size: 18px;
+    }
+
+    .cart_info_info {
+        font-size: 12px;
+        width: 253px;
+    }
+
+    .cart_info_price {
+        font-size: 12px;
+    }
+
+    .cart_buttons {
+        gap: 14px;
+
+        &_button {
+            padding: 11px 17px 11px 17px;
+            font-size: 12px;
+
+        }
+    }
+
+    .heading1 {
+        font-size: 24px;
+    }
+
+    .for_box {
+        padding-top: 32px;
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &_item {
+            grid-column: 1 / -1;
+            height: 375px;
+
+            &_big {
+                height: 244px;
+            }
+        }
+
+        &_text {
+            font-size: 28px;
+        }
+    }
+
+    .product_box {
+        padding-top: 36px;
+    }
+
+    .product_content {
+        gap: 32px;
+    }
+
+    .product_img {
+        height: 226.205px;
+    }
+
+    .product_heading {
+        font-size: 18px;
+    }
+
+    .price0, .price1 {
+        font-size: 18px;
+    }
+
+    .down {
+        padding-top: 36px;
+        margin-bottom: 32px;
+    }
+
+    .footer {
+        justify-content: center;
+        gap: 34px;
+        padding-bottom: 32px;
+    }
+}

@@ -1,0 +1,268 @@
+.top_cart {
+    height: 400px;
+    background-image: url(img/cart_top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $gap;
+    margin-top: 64px;
+
+    &_name_box {
+        display: flex;
+        padding-bottom: 14px;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: space-between;
+
+        &_2 {
+            width: 71px;
+        }
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &_left {
+        display: flex;
+        gap: $gap;
+    }
+
+    &_right {
+        border: none;
+        border-radius: 6px;
+        background: #F7F6F6;
+        width: 71px;
+        height: 51px;
+        flex-shrink: 0;
+        font-family: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--Color---7, #000);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 210%;
+    }
+
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        &_heading {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &_info {
+            color: #888;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_price {
+            font-weight: 500;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+            color: #050505;
+        }
+    }
+
+    &_link_box {
+        display: flex;
+        gap: 30px;
+
+        &_link {
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 210%;
+            color: #000000;
+            text-decoration: underline;
+            transition: text-decoration 0.3s ease-in-out, color 0.3s;
+
+            &:hover {
+                color: #888888;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &_buttons {
+        display: flex;
+        gap: 7px;
+
+        &_button {
+            border-radius: 50px;
+            border: 1px solid #000;
+            display: inline-flex;
+            padding: 10px 34px 10px 33px;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: #020202;
+            text-align: center;
+            font-family: inherit;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+
+            &:hover {
+                background-color: #000000;
+                color: $color-text;
+            }
+        }
+    }
+
+    &_form {
+        border-radius: 20px;
+        background: #F7F6F6;
+        height: 556px;
+        width: 379px;
+        grid-column: span 4;
+
+        &_heading {
+            margin-top: 42px;
+            margin-bottom: 35px;
+            color: #000;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &_input {
+            display: flex;
+            flex-direction: column;
+            padding-left: 27px;
+            gap: 44px;
+            width: 288px;
+            margin-bottom: 64px;
+        }
+
+        &_input_style {
+            border-bottom: 1px solid #CACDD8;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: transparent;
+            font-family: inherit;
+            width: 288px;
+            height: 17px;
+            flex-shrink: 0;
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &::placeholder {
+                color: #000000;
+            }
+        }
+
+        &_accept {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_input_sum {
+            margin-bottom: 18px;
+            color: #000;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_input_button {
+            border-radius: 20px;
+            border: 1px solid #040404;
+            font-family: inherit;
+            display: flex;
+            height: 41px;
+            padding: 10px 63px 11px 90px;
+            justify-content: flex-end;
+            align-items: center;
+            flex-shrink: 0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+            animation: checkout_button 7s ease-in-out 1s infinite normal none;
+
+            &:hover {
+                background-color: #000000;
+                color: $color-text;
+                animation: none;
+            }
+        }
+    }
+
+    &_content {
+        grid-column: span 8;
+    }
+}
+
+@keyframes checkout_button {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}

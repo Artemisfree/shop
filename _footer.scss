@@ -1,0 +1,84 @@
+.logo_text {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000000;
+}
+
+.menu_bottom, .contacts,
+.email_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    padding-bottom: 12px;
+}
+
+.link4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    padding-top: 12px;
+}
+
+.link_footer:hover {
+    text-decoration: underline;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding-top: 15.5px;
+}
+
+.text2 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-bottom: 16px;
+}
+
+.email {
+    width: 275px;
+    height: 46px;
+    background: $color-text;
+    stroke-width: 1px;
+    border: 1px solid #C4C4C4;
+    outline: none;
+    border-radius: 20px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.button {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid $color-text;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 275px;
+    height: 46px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 12px;
+
+    &:hover {
+        background-color: #000000;
+        color: $color-text;
+    }
+}
