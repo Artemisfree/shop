@@ -411,11 +411,19 @@ select,
   text-decoration: underline;
 }
 
-.footer_icons {
+.footer__icons {
   display: flex;
   gap: 18px;
   align-items: center;
   padding-top: 15.5px;
+}
+
+.icon {
+  transition: fill 4s;
+}
+
+.icon:hover path {
+  fill: #000000;
 }
 
 .text2 {
