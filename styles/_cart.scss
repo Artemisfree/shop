@@ -1,6 +1,6 @@
 .top_cart {
     height: 400px;
-    background-image: url(img/cart_top.jpg);
+    background-image: url(../img/cart_top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -12,7 +12,7 @@
     gap: $gap;
     margin-top: 64px;
 
-    &_name_box {
+    &__name-box {
         display: flex;
         padding-bottom: 14px;
         color: #000;
@@ -27,7 +27,7 @@
         }
     }
 
-    &_item {
+    &__item {
         border-top: 0.5px solid #CACDD8;
         padding-top: 25px;
         padding-bottom: 32px;
@@ -36,12 +36,12 @@
         align-items: start;
     }
 
-    &_left {
+    &__left {
         display: flex;
         gap: $gap;
     }
 
-    &_right {
+    &__right {
         border: none;
         border-radius: 6px;
         background: #F7F6F6;
@@ -113,11 +113,11 @@
         }
     }
 
-    &_buttons {
+    &__buttons {
         display: flex;
         gap: 7px;
 
-        &_button {
+        &_hover {
             border-radius: 50px;
             border: 1px solid #000;
             display: inline-flex;
@@ -141,7 +141,7 @@
         }
     }
 
-    &_form {
+    &__form {
         border-radius: 20px;
         background: #F7F6F6;
         height: 556px;
@@ -168,7 +168,7 @@
             margin-bottom: 64px;
         }
 
-        &_input_style {
+        &_style {
             border-bottom: 1px solid #CACDD8;
             border-top: none;
             border-left: none;
@@ -195,7 +195,7 @@
             align-items: center;
         }
 
-        &_input_sum {
+        &_sum {
             margin-bottom: 18px;
             color: #000;
             text-align: center;
@@ -205,7 +205,7 @@
             line-height: normal;
         }
 
-        &_input_button {
+        &_button {
             border-radius: 20px;
             border: 1px solid #040404;
             font-family: inherit;
@@ -230,7 +230,7 @@
         }
     }
 
-    &_content {
+    &__content {
         grid-column: span 8;
     }
 }

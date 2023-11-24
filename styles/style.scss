@@ -32,15 +32,15 @@ a {
 
 .top {
     height: 735px;
-    background-image:url(img/index_top.jpg);
+    background-image:url(../img/index_top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
 
-    &_catalog {
+    &__catalog {
         height: 400px;
-        background-image: url(img/catalog_top.jpg);
+        background-image: url(../img/catalog_top.jpg);
     }
 }
 
@@ -82,7 +82,7 @@ a {
     display: flex;
     gap: 32px;
 
-    &_link {
+    &__link {
         font-style: normal;
         line-height: normal;
         font-size: 16px;
@@ -94,7 +94,7 @@ a {
         }
     }
 
-    &_mob {
+    &__mob {
         display: none;
     }
 }
@@ -135,7 +135,7 @@ a {
     }
 }
 
-.heading_cat {
+.catalog-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -143,12 +143,12 @@ a {
     align-items: center;
 }
 
-.catalog_links_top {
+.catalog-links__top {
     display: flex;
     gap: 10px;
 }
 
-.link_catalog {
+.catalog-links__crumbs{
     color: #000;
     font-size: 16px;
     font-style: normal;
@@ -244,7 +244,7 @@ select,
     padding-bottom: 32px;
 }
 
-.for_box {
+.for__box {
     padding-top: 64px;
 }
 
@@ -252,8 +252,17 @@ select,
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-    
-    &_item {
+
+    &__text {
+        text-align: center;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: $color-text;
+    }
+
+    &__item {
         height: 415px;
         grid-column: span 4;
         display: flex;
@@ -272,42 +281,32 @@ select,
         }
 
         &_1 {
-            background-image: url(img/for1.jpg);
+            background-image: url(../img/for1.jpg);
         }
 
         &_2 {
-            background-image: url(img/for2.jpg);
+            background-image: url(../img/for2.jpg);
         }
 
         &_3 {
-            background-image: url(img/for3.jpg);
+            background-image: url(../img/for3.jpg);
         }
 
         &_4 {
-            background-image: url(img/for4.jpg);
+            background-image: url(../img/for4.jpg);
         }
 
         &_5 {
-            background-image: url(img/for5.jpg);
+            background-image: url(../img/for5.jpg);
         }
     }
 }
 
-.for_text {
-    text-align: center;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: $color-text;
-}
-
-
-.product_box {
+.product__box {
     padding-top: 64px;
 }
 
-.product_content {
+.product__content {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
@@ -324,13 +323,13 @@ select,
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03);
     }
 
-    &_img {
+    &__img {
         width: 100%;
     }
 }
 
 
-.product_heading {
+.product__heading {
     font-weight: 500;
     font-size: 24px;
     font-style: normal;
@@ -348,7 +347,7 @@ select,
     margin-bottom: 12px;
 }
 
-.sale_price {
+.product__price {
     display: flex;
     gap: 32px;
 }
@@ -373,7 +372,7 @@ select,
     padding-top: 32px;
     margin-bottom: 64px;
 
-    &_link {
+    &__link {
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -389,7 +388,7 @@ select,
     }
 }
 
-.logo_text {
+.footer__logo-text {
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
@@ -397,13 +396,13 @@ select,
     color: #000000;
 }
 
-.menu_bottom, .contacts,
-.email_input {
+.navbar__bottom, .footer__contacts,
+.footer__form_email {
     display: flex;
     flex-direction: column;
 }
 
-.nav_link {
+.footer__nav-links {
     display: flex;
     gap: 129px;
 }
@@ -424,7 +423,7 @@ select,
     padding-top: 12px;
 }
 
-.link_footer {
+.navbar__bottom_link-hov {
     &:hover {
         text-decoration: underline;
     }
@@ -437,11 +436,7 @@ select,
     padding-top: 15.5px;
 }
 
-.icon {
-    transition: fill 4s;
-}
-
-.icon:hover path {
+.footer__icon-svg:hover path {
     fill: #000000;
 }
 
@@ -456,7 +451,7 @@ select,
     padding-bottom: 16px;
 }
 
-.email {
+.footer__form_email {
     width: 275px;
     height: 46px;
     background: $color-text;
@@ -474,7 +469,7 @@ select,
     box-sizing: border-box;
 }
 
-.button {
+.footer__form_button {
     background: rgba(222, 215, 215, 0.41);
     border: 1px solid $color-text;
     box-sizing: border-box;
