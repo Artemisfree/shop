@@ -94,7 +94,7 @@ a {
   display: none;
 }
 
-.heading0 {
+.top__heading {
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -105,7 +105,7 @@ a {
   max-width: 792px;
 }
 
-.text0 {
+.top__text {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -114,7 +114,7 @@ a {
   color: #ffffff;
 }
 
-.link0 {
+.top__link {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -125,7 +125,7 @@ a {
   transition: text-decoration 0.3s ease-in-out, color 0.3s;
   transition: text-decoration 0.3s ease-in-out, color 0.3s, -webkit-text-decoration 0.3s ease-in-out;
 }
-.link0:hover {
+.top__link:hover {
   color: #888888;
   text-decoration: none;
 }
@@ -230,7 +230,7 @@ select,
   grid-area: select;
 }
 
-.heading1 {
+.for__box_heading {
   font-weight: 600;
   font-size: 48px;
   font-style: normal;
@@ -322,7 +322,7 @@ select,
   margin-bottom: 8px;
 }
 
-.text1 {
+.product__text {
   font-size: 14px;
   font-style: normal;
   line-height: normal;
@@ -335,7 +335,7 @@ select,
   gap: 32px;
 }
 
-.price0 {
+.product__price_new {
   font-weight: 500;
   font-size: 24px;
   font-style: normal;
@@ -343,7 +343,7 @@ select,
   color: #050505;
 }
 
-.price1 {
+.product__price_old {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -390,7 +390,7 @@ select,
   gap: 129px;
 }
 
-.heading3 {
+.navbar__bottom_heading {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -398,7 +398,7 @@ select,
   padding-bottom: 12px;
 }
 
-.link4 {
+.navbar__bottom_link {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -773,16 +773,16 @@ select,
   .logo_img {
     width: 99px;
   }
-  .heading0 {
+  .top__heading {
     text-align: center;
     font-size: 48px;
   }
-  .text0 {
+  .top__text {
     font-size: 16px;
     line-height: 32px;
     text-align: center;
   }
-  .link0 {
+  .top__link {
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -820,7 +820,7 @@ select,
     padding: 11px 17px 11px 17px;
     font-size: 12px;
   }
-  .heading1 {
+  .for__box_heading {
     font-size: 24px;
   }
   .for_box {
@@ -852,7 +852,7 @@ select,
   .product_heading {
     font-size: 18px;
   }
-  .price0, .price1 {
+  .product__price_new, .product__price_old {
     font-size: 18px;
   }
   .down {

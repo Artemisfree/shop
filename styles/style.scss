@@ -99,7 +99,7 @@ a {
     }
 }
 
-.heading0 {
+.top__heading {
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
@@ -110,7 +110,7 @@ a {
     max-width: 792px;
 }
 
-.text0 {
+.top__text {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -120,7 +120,7 @@ a {
 
 }
 
-.link0 {
+.top__link {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -235,7 +235,7 @@ select,
   grid-area: select;
 }
 
-.heading1 {
+.for__box_heading {
     font-weight: 600;
     font-size: 48px;
     font-style: normal;
@@ -339,7 +339,7 @@ select,
     margin-bottom: 8px;
 }
 
-.text1 {
+.product__text {
     font-size: 14px;
     font-style: normal;
     line-height: normal;
@@ -352,7 +352,7 @@ select,
     gap: 32px;
 }
 
-.price0 {
+.product__price_new {
     font-weight: 500;
     font-size: 24px;
     font-style: normal;
@@ -360,7 +360,7 @@ select,
     color: #050505;
 }
 
-.price1 {
+.product__price_old {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -407,7 +407,7 @@ select,
     gap: 129px;
 }
 
-.heading3 {
+.navbar__bottom_heading {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -415,7 +415,7 @@ select,
     padding-bottom: 12px;
 }
 
-.link4 {
+.navbar__bottom_link {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
